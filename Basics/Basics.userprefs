@@ -1,0 +1,20 @@
+﻿<Properties StartupConfiguration="{0F6826AE-1DAD-4938-8CBA-D92DE732539A}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Basics/App.xaml.cs">
+    <Files>
+      <File FileName="Basics/MyGridLayoutPage.cs" Line="90" Column="33" />
+      <File FileName="Basics/MyLayoutsPage.cs" Line="51" Column="49" />
+      <File FileName="Basics/MyAbsoluteLayoutPage.cs" Line="42" Column="36" />
+      <File FileName="Basics/MyRelativeLayoutPage.cs" Line="34" Column="36" />
+      <File FileName="Basics/MyTabPage.cs" Line="17" Column="2" />
+      <File FileName="Basics/MyViewsPage.cs" Line="100" Column="27" />
+      <File FileName="Basics/App.xaml.cs" Line="11" Column="28" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Basics.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.261EA473-098A-48F7-BBE3-74A2A9D730B8" />
+  <MultiItemStartupConfigurations />
+</Properties>
