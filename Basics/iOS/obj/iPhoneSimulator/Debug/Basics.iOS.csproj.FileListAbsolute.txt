@@ -56,3 +56,4 @@
 /Users/dorukkorkmaz/Projects/Basics/iOS/obj/iPhoneSimulator/Debug/Basics.iOS.csproj.CoreCompileInputs.cache
 /Users/dorukkorkmaz/Projects/Basics/iOS/obj/iPhoneSimulator/Debug/Basics.iOS.exe
 /Users/dorukkorkmaz/Projects/Basics/iOS/obj/iPhoneSimulator/Debug/Basics.iOS.pdb
+/Users/dorukkorkmaz/Projects/Basics/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3.1/optimized/logo.png
