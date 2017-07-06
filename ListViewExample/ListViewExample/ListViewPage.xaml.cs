@@ -23,10 +23,5 @@ namespace ListViewExample
             };
 
         }
-
-        public void onTextChanged()
-        {
-
-        }
     }
 }
