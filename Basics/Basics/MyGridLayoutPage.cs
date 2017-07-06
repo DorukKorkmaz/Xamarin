@@ -80,7 +80,7 @@ namespace Basics
 
             grid.Children.Add(new Label
             {
-                Text = "100x100",
+                Text = "100x100 Box",
                 TextColor = Color.Aqua,
                 BackgroundColor = Color.Red,
                 HorizontalTextAlignment = TextAlignment.Center,
