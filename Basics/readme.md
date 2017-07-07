@@ -194,13 +194,13 @@ Bir sayfa ekranın büyük bir çoğunluğunu kapsar ve bir tane child’ı vard
 <img src="images.fld/image057.png" alt="" height=200>
 </p>
 
-* **NavigationPage** – Stack yapısının kullanıldığı ve her yeni açılan sayfanın stacke atıldığı, eski sayfaya geri dönüldüğünde ise stackten çıkarıldığı sayfa yapısıdır. [Örnek] (https://github.com/DorukKorkmaz/Xamarin/blob/master/Basics/Basics/MyLayoutsPage.cs)
+* **NavigationPage** – Stack yapısının kullanıldığı ve her yeni açılan sayfanın stacke atıldığı, eski sayfaya geri dönüldüğünde ise stackten çıkarıldığı sayfa yapısıdır. [Örnek](https://github.com/DorukKorkmaz/Xamarin/blob/master/Basics/Basics/MyLayoutsPage.cs)
 
 <p align="center">
 <img src="images.fld/image059.png" alt="" height=200>
 </p>
 
-* **TabbedPage** – Childrenları arasında kolay geçişi sağlayan sayfa yapısıdır. [Örnek] (https://github.com/DorukKorkmaz/Xamarin/blob/master/Basics/Basics/MyTabPage.cs)
+* **TabbedPage** – Childrenları arasında kolay geçişi sağlayan sayfa yapısıdır. [Örnek](https://github.com/DorukKorkmaz/Xamarin/blob/master/Basics/Basics/MyTabPage.cs)
 
 <p align="center">
 <img src="images.fld/image061.png" alt="" height=200>
