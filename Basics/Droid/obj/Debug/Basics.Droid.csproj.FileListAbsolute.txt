@@ -41,3 +41,4 @@
 /Users/dorukkorkmaz/Projects/Basics/Droid/bin/Debug/Xamarin.Forms.Core.dll.mdb
 /Users/dorukkorkmaz/Projects/Basics/Droid/bin/Debug/Xamarin.Forms.Platform.Android.dll.mdb
 /Users/dorukkorkmaz/Projects/Basics/Droid/bin/Debug/Xamarin.Forms.Xaml.dll.mdb
+/Users/dorukkorkmaz/Projects/Basics/Droid/obj/Debug/res/drawable/logo.png
