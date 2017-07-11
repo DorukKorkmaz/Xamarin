@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Linq;
 using System.Runtime.CompilerServices;
 using Xamarin.Forms;
 
@@ -10,27 +11,23 @@ namespace SQLiteExample
     public partial class ListViewPage : ContentPage
     {
 
-        public ObservableCollection<ObservableItem> items { get; set; }
+        //public ObservableCollection<ObservableItem> items { get; set; }
+
+        ItemDatabase database;
 
         public ListViewPage()
         {
             InitializeComponent();
-
-            items = new ObservableCollection<ObservableItem> {
-                new ObservableItem {Title = "First", Description="1st item"},
-                new ObservableItem {Title = "Second", Description="2nd item"},
-                new ObservableItem {Title = "Third", Description="3rd item"}
-            };
-
-            listView.ItemsSource = items;
-
+            database = new ItemDatabase();
+            listView.BindingContext = database.GetObjects<ObservableItem>().ToList();
         }
 
         public void onDelete(object sender, EventArgs e)
         {
             var selectedMenuItem = (MenuItem)sender;
             var selectedItem = (ObservableItem)selectedMenuItem.BindingContext;
-            items.Remove(selectedItem);
+            database.DeleteObject<ObservableItem>(selectedItem.ID);
+            refreshList();
         }
 
         public async void onUpdate(object sender, EventArgs e)
@@ -38,71 +35,25 @@ namespace SQLiteExample
             var selectedMenuItem = (MenuItem)sender;
             var selectedItem = (ObservableItem)selectedMenuItem.BindingContext;
             await Navigation.PushAsync(new DetailPage(selectedItem));
-
+            refreshList();
         }
 
-        public async void onInsert(object sender, EventArgs e)
+        public void onInsert(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new InsertPage(items));
+            Navigation.PushAsync(new InsertPage());
+            refreshList();
+        }
+
+        public void onRefresh(object sender, EventArgs e)
+        {
+            refreshList();
+        }
+        public void refreshList()
+        {
+            listView.BindingContext = database.GetObjects<ObservableItem>().ToList();
         }
 
     }
 
-    public class Item
-    {
-        public String Title { get; set; }
-        public String Description { get; set; }
-    }
 
-    public class ObservableItem : INotifyPropertyChanged
-    {
-        public event PropertyChangedEventHandler PropertyChanged;
-        Item item;
-
-        public ObservableItem()
-        {
-            item = new Item();
-        }
-
-        public string Title
-        {
-            set
-            {
-                if (!value.Equals(item.Title, StringComparison.Ordinal))
-                {
-                    item.Title = value;
-                    OnPropertyChanged("Title");
-                }
-            }
-            get
-            {
-                return item.Title;
-            }
-        }
-
-        public string Description
-        {
-            set
-            {
-                if (!value.Equals(item.Description, StringComparison.Ordinal))
-                {
-                    item.Description = value;
-                    OnPropertyChanged("Description");
-                }
-            }
-            get
-            {
-                return item.Description;
-            }
-        }
-
-        void OnPropertyChanged([CallerMemberName] string propertyName = null)
-        {
-            var handler = PropertyChanged;
-            if (handler != null)
-            {
-                handler(this, new PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
 }

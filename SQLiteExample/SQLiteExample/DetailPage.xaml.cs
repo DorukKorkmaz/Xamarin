@@ -17,6 +17,8 @@ namespace SQLiteExample
             {
                 item.Title = titleCell.Text;
                 item.Description = descriptionCell.Text;
+                ItemDatabase database = new ItemDatabase();
+                database.SaveObject(item);
                 Navigation.PopAsync();
             };
         }

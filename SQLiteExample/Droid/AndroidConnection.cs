@@ -1,9 +1,13 @@
 ﻿using System;
 using SQLite.Net;
+using SQLite.Net.Platform.XamarinAndroid;
+using SQLiteExample.Droid;
+using Xamarin.Forms;
 
+[assembly: Dependency(typeof(AndroidConnection))]
 namespace SQLiteExample.Droid
 {
-    public class SQLiteConnection : ISQLiteConnection
+    public class AndroidConnection : ISQLiteConnection
     {
         public SQLiteConnection getConnection()
         {

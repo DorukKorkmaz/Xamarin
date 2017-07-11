@@ -7,7 +7,7 @@ namespace SQLiteExample
 {
     public partial class InsertPage : ContentPage
     {
-        public InsertPage(ObservableCollection<ObservableItem> items)
+        public InsertPage()
         {
             InitializeComponent();
 
@@ -19,7 +19,8 @@ namespace SQLiteExample
                     Description = descriptionCell.Text
                 };
 
-                items.Add(item);
+                ItemDatabase database = new ItemDatabase();
+                database.SaveObject<ObservableItem>(item);
                 Navigation.PopAsync();
             };
         }

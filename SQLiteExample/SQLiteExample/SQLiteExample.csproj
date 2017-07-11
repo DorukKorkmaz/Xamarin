@@ -53,6 +53,9 @@
     <Compile Include="InsertPage.xaml.cs">
       <DependentUpon>InsertPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ISQLiteConnection.cs" />
+    <Compile Include="ObservableItem.cs" />
+    <Compile Include="ItemDatabase.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

@@ -4,6 +4,8 @@ namespace SQLiteExample
 {
     public partial class App : Application
     {
+        public static string DbName { get; set; } = "SQLiteExample.db3";
+
         public App()
         {
             InitializeComponent();

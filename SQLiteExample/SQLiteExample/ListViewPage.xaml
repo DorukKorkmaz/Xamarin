@@ -2,11 +2,12 @@
 <ContentPage Title="List View" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SQLiteExample.ListViewPage">
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Icon="add.png" Clicked="onInsert"></ToolbarItem>
+        <ToolbarItem Text="Insert" Clicked="onInsert"></ToolbarItem>
+        <ToolbarItem Text="Refresh" Clicked="onRefresh"></ToolbarItem>
     </ContentPage.ToolbarItems>
 
     <ContentPage.Content>
-        <ListView x:Name="listView">
+        <ListView x:Name="listView" ItemsSource="{Binding .}" >
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <TextCell Text="{Binding Title}" Detail="{Binding Description}">

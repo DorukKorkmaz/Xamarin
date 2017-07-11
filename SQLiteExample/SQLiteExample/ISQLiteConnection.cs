@@ -1,10 +1,10 @@
 ﻿using System;
+using SQLite.Net;
+
 namespace SQLiteExample
 {
-    public class ISQLiteConnection
+    public interface ISQLiteConnection
     {
-        public ISQLiteConnection()
-        {
-        }
+        SQLiteConnection getConnection();
     }
 }
