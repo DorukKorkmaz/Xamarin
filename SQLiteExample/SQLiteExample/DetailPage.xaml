@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage Title="Update Page" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SQLiteExample.DetailPage">
+	<ContentPage.Content>
+        <StackLayout Orientation="Vertical" >
+            <TableView Intent="Form">
+                <TableView.Root>
+                    <TableSection Title="Update Item">
+                        <EntryCell x:Name="titleCell" Label="Title"></EntryCell>
+                        <EntryCell x:Name="descriptionCell" Label="Description"></EntryCell>
+                        <ViewCell>
+                            <Button x:Name="updateButton" Text="Update"></Button>
+                        </ViewCell>
+                    </TableSection>
+                </TableView.Root>
+            </TableView>
+        </StackLayout>
+	</ContentPage.Content>
+</ContentPage>

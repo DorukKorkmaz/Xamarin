@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage Title="List View" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SQLiteExample.ListViewPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="add.png" Clicked="onInsert"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <ListView x:Name="listView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Title}" Detail="{Binding Description}">
+                        <TextCell.ContextActions>
+                            <MenuItem Text="Update" IsDestructive="False" Clicked="onUpdate"></MenuItem>
+                            <MenuItem Text="Delete" IsDestructive="True" Clicked="onDelete"></MenuItem>
+                        </TextCell.ContextActions>
+                    </TextCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+	</ContentPage.Content>
+</ContentPage>
