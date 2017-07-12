@@ -11,8 +11,6 @@ namespace SQLiteExample
     public partial class ListViewPage : ContentPage
     {
 
-        //public ObservableCollection<ObservableItem> items { get; set; }
-
         ItemDatabase database;
 
         public ListViewPage()

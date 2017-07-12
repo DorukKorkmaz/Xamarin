@@ -1,15 +1,15 @@
 ﻿<Properties StartupConfiguration="{3DAB46EF-6A87-442F-B51A-D598F26FF071}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="AutoListView/ListViewPage.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AutoListView/App.xaml.cs">
     <Files>
       <File FileName="AutoListView/InsertPage.xaml" Line="19" Column="1" />
-      <File FileName="AutoListView/InsertPage.xaml.cs" Line="10" Column="42" />
-      <File FileName="AutoListView/ListViewPage.xaml" Line="20" Column="27" />
-      <File FileName="AutoListView/ListViewPage.xaml.cs" Line="40" Column="50" />
+      <File FileName="AutoListView/InsertPage.xaml.cs" Line="10" Column="69" />
+      <File FileName="AutoListView/ListViewPage.xaml" Line="5" Column="32" />
+      <File FileName="AutoListView/ListViewPage.xaml.cs" Line="37" Column="50" />
       <File FileName="AutoListView/App.xaml" Line="7" Column="1" />
-      <File FileName="AutoListView/App.xaml.cs" Line="11" Column="43" />
+      <File FileName="AutoListView/App.xaml.cs" Line="14" Column="42" />
       <File FileName="AutoListView/UpdatePage.xaml" Line="19" Column="1" />
-      <File FileName="AutoListView/UpdatePage.xaml.cs" Line="21" Column="15" />
-      <File FileName="AutoListView/ObsersableItem.cs" Line="1" Column="1" />
+      <File FileName="AutoListView/UpdatePage.xaml.cs" Line="2" Column="34" />
+      <File FileName="AutoListView/ObsersableItem.cs" Line="49" Column="41" />
       <File FileName="AutoListView/packages.config" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>

@@ -11,13 +11,11 @@ namespace SQLiteExample
     {
         static object locker = new object();
         SQLiteConnection database;
-        public ObservableCollection<ObservableItem> items { get; set; }
 
         public ItemDatabase()
         {
             database = DependencyService.Get<ISQLiteConnection>().getConnection();
             database.CreateTable<ObservableItem>();
-            this.items = new ObservableCollection<ObservableItem>(database.Table<ObservableItem>());
         }
         public IEnumerable<T> GetObjects<T>() where T : ObservableItem, new()
         {
