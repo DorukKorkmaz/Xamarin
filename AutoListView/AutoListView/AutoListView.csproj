@@ -53,7 +53,7 @@
     <Compile Include="UpdatePage.xaml.cs">
       <DependentUpon>UpdatePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ObsersableItem.cs" />
+    <Compile Include="ObservableItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

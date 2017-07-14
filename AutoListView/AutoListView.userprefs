@@ -3,7 +3,7 @@
     <Files>
       <File FileName="AutoListView/InsertPage.xaml" Line="19" Column="1" />
       <File FileName="AutoListView/InsertPage.xaml.cs" Line="10" Column="69" />
-      <File FileName="AutoListView/ListViewPage.xaml" Line="5" Column="32" />
+      <File FileName="AutoListView/ListViewPage.xaml" Line="22" Column="1" />
       <File FileName="AutoListView/ListViewPage.xaml.cs" Line="37" Column="50" />
       <File FileName="AutoListView/App.xaml" Line="7" Column="1" />
       <File FileName="AutoListView/App.xaml.cs" Line="14" Column="42" />
