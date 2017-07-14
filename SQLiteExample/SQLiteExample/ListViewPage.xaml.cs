@@ -33,13 +33,11 @@ namespace SQLiteExample
             var selectedMenuItem = (MenuItem)sender;
             var selectedItem = (ObservableItem)selectedMenuItem.BindingContext;
             await Navigation.PushAsync(new DetailPage(selectedItem));
-            refreshList();
         }
 
         public void onInsert(object sender, EventArgs e)
         {
             Navigation.PushAsync(new InsertPage());
-            refreshList();
         }
 
         public void onRefresh(object sender, EventArgs e)

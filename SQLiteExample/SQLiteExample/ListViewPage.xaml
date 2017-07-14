@@ -2,8 +2,8 @@
 <ContentPage Title="List View" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SQLiteExample.ListViewPage">
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Insert" Clicked="onInsert"></ToolbarItem>
         <ToolbarItem Text="Refresh" Clicked="onRefresh"></ToolbarItem>
+        <ToolbarItem Text="Insert" Clicked="onInsert"></ToolbarItem>
     </ContentPage.ToolbarItems>
 
     <ContentPage.Content>

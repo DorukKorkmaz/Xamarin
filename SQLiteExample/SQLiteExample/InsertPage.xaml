@@ -4,7 +4,7 @@
         <StackLayout Orientation="Vertical" >
             <TableView Intent="Form">
                 <TableView.Root>
-                    <TableSection Title="Update Item">
+                    <TableSection Title="Insert Item">
                         <EntryCell x:Name="titleCell" Label="Title" Placeholder="Insert Title"></EntryCell>
                         <EntryCell x:Name="descriptionCell" Label="Description" Placeholder="Insert Description"></EntryCell>
                         <ViewCell>
