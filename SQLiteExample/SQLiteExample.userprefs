@@ -1,10 +1,10 @@
 ﻿<Properties StartupConfiguration="{1427EC67-E9BC-444E-804A-30BBAC80D16B}|Default">
   <MonoDevelop.Ide.ItemProperties.SQLiteExample.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="SQLiteExample/InsertPage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SQLiteExample/ListViewPage.xaml.cs">
     <Files>
-      <File FileName="SQLiteExample/ListViewPage.xaml.cs" Line="34" Column="80" />
+      <File FileName="SQLiteExample/ListViewPage.xaml.cs" Line="29" Column="9" />
       <File FileName="SQLiteExample/DetailPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="SQLiteExample/InsertPage.xaml" Line="12" Column="36" />
+      <File FileName="SQLiteExample/InsertPage.xaml" Line="19" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

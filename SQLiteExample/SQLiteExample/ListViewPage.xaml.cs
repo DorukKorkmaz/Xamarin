@@ -25,14 +25,13 @@ namespace SQLiteExample
             var selectedMenuItem = (MenuItem)sender;
             var selectedItem = (ObservableItem)selectedMenuItem.BindingContext;
             database.DeleteObject<ObservableItem>(selectedItem.ID);
-            refreshList();
         }
 
-        public async void onUpdate(object sender, EventArgs e)
+        public void onUpdate(object sender, EventArgs e)
         {
             var selectedMenuItem = (MenuItem)sender;
             var selectedItem = (ObservableItem)selectedMenuItem.BindingContext;
-            await Navigation.PushAsync(new DetailPage(selectedItem));
+            Navigation.PushAsync(new DetailPage(selectedItem));
         }
 
         public void onInsert(object sender, EventArgs e)
@@ -45,6 +44,11 @@ namespace SQLiteExample
             refreshList();
         }
         public void refreshList()
+        {
+            listView.BindingContext = database.GetObjects<ObservableItem>().ToList();
+        }
+
+        protected override void OnAppearing()
         {
             listView.BindingContext = database.GetObjects<ObservableItem>().ToList();
         }
