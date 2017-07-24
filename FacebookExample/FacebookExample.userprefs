@@ -1,0 +1,23 @@
+﻿<Properties StartupConfiguration="{A3F98EE3-7491-49B0-9E50-C74DC8C7B386}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FacebookExample/Services/FacebookServices.cs">
+    <Files>
+      <File FileName="FacebookExample/App.xaml.cs" Line="12" Column="52" />
+      <File FileName="iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="FacebookExample/App.xaml" Line="7" Column="1" />
+      <File FileName="FacebookExample/Views/MainCsPage.cs" Line="40" Column="44" />
+      <File FileName="FacebookExample/packages.config" Line="1" Column="1" />
+      <File FileName="FacebookExample/Views/FacebookProfileCsPage.cs" Line="135" Column="14" />
+      <File FileName="FacebookExample/ViewModels/FacebookViewModel.cs" Line="13" Column="38" />
+      <File FileName="FacebookExample/Services/FacebookServices.cs" Line="28" Column="36" />
+      <File FileName="FacebookExample/Models/FacebookProfile.cs" Line="22" Column="41" />
+      <File FileName="FacebookExample/Properties/AssemblyInfo.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.FacebookExample.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.261EA473-098A-48F7-BBE3-74A2A9D730B8" />
+</Properties>
